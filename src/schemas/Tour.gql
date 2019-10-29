@@ -3,7 +3,7 @@
 type Tour {
   id: Int!,
   name: String!,
-  schedule: Schedule!,
+  schedule: [Schedule]!,
   description: String!,
   max_people: Int!,
   cost: Float!,
