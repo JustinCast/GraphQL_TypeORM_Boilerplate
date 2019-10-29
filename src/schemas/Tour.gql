@@ -1,0 +1,14 @@
+# import Tag from 'Tag.gql'
+# import Schedule from 'Schedule.gql'
+type Tour {
+  id: Int!,
+  name: String!,
+  schedule: Schedule!,
+  description: String!,
+  max_people: Int!,
+  cost: Float!,
+  all_included: Boolean!,
+  ming_age: Int!,
+  ranking: Int!,
+  tags: [Tag]!
+}

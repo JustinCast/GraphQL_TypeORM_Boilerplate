@@ -1,0 +1,5 @@
+type Schedule {
+  id: Int!,
+  from_datetime: String!,
+  to_datetime: String!
+}
