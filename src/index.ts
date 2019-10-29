@@ -1,23 +1,28 @@
 import "reflect-metadata";
 import { GraphQLServer } from "graphql-yoga";
 import { createConnection } from "typeorm";
+import { Schedule } from "./entities/Schedule";
+import { Tag } from "./entities/Tag";
+import { Tour } from "./entities/Tour";
+import { ScheduleResolver } from "./resolvers/Schedule.resolver";
+import { TagResolver } from "./resolvers/Tag.resolver";
+import { TourResolver } from "./resolvers/Tour.resolver";
 
 createConnection({
   type: "postgres",
-  host: "104.197.49.69",
-  database: "bookyourtrip",
-  username: "postgres",
-  password: "12345",
+  host: "",
+  database: "",
+  username: "",
+  password: "",
   synchronize: false,
   logging: false,
   cache: false,
-  entities: []
+  entities: [Schedule, Tag, Tour],
 })
   .then(() => {
     const server = new GraphQLServer({
       typeDefs: [],
-      resolvers: [
-      ]
+      resolvers: [ScheduleResolver, TagResolver, TourResolver],
     });
 
     server.start(
