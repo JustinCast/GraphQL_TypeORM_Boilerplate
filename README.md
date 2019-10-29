@@ -1,1 +1,2 @@
-# GraphQL_TypeORM_Boilerplate
+# GraphQL and TypeORM Boilerplate by JustinCast
+
