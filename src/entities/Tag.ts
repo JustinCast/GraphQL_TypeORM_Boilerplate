@@ -1,6 +1,11 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from "typeorm";
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  ManyToOne,
+  JoinColumn,
+} from "typeorm";
 import { Tour } from "./Tour";
-
 
 @Entity()
 export class Tag {
@@ -11,6 +16,6 @@ export class Tag {
   name!: string;
 
   @ManyToOne(() => Tour, (tour: Tour) => tour.tags)
-  @JoinColumn({name: "id_tour"})
-  tour!: Tour
+  @JoinColumn({ name: "id_tour" })
+  tour!: Tour;
 }
