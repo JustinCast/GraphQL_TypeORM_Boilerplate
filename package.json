@@ -1,0 +1,28 @@
+{
+  "name": "graphql_typeorm_boilerplate",
+  "version": "1.0.0",
+  "description": "Workshop for SC Technology Summit",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustinCast/GraphQL_TypeORM_Boilerplate.git"
+  },
+  "keywords": [
+    "graphql",
+    "typeorm",
+    "graphqlyoga"
+  ],
+  "author": "JustinCast",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JustinCast/GraphQL_TypeORM_Boilerplate/issues"
+  },
+  "homepage": "https://github.com/JustinCast/GraphQL_TypeORM_Boilerplate#readme",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3",
+    "typeorm": "^0.2.20"
+  }
+}
