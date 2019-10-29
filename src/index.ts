@@ -8,12 +8,14 @@ import { ScheduleResolver } from "./resolvers/Schedule.resolver";
 import { TagResolver } from "./resolvers/Tag.resolver";
 import { TourResolver } from "./resolvers/Tour.resolver";
 
+require('dotenv').config();
+
 createConnection({
   type: "postgres",
-  host: "",
-  database: "",
-  username: "",
-  password: "",
+  host: process.env.DB_HOST,
+  database: process.env.DB_NAME,
+  username: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
   synchronize: false,
   logging: false,
   cache: false,
