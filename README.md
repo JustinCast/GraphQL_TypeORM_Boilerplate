@@ -2,9 +2,31 @@
 
 > Nota: En el presente .md se realiza una descripción a grandes rasgos  sobre las carpetas y archivos. **Si se desea una descripción más detallada, el código está documentado  :smile:  **
 
+# Tabla de contenidos
+
+- [Estructura del proyecto](#Estructura del proyecto)
+  - [src](#src)
+  - [entities](#entities)
+  - [resolvers](#resolvers)
+  - [schemas](#schemas)
+  - [node_modules](#node_modules)
+
+- [Archivos](#Archivos)
+  - [tsconfig.json](#tsconfig.json)
+  - [index.ts](#index.ts)
+  - [schemas-index.ts](#schemas-index.ts)
+  - [package.json](#package.json)
+- [Dependencias](#Dependencias)
+  - [TypeScript](#TypeScript)
+  - [TypeORM](#TypeORM)
+- [Scripts](#Scripts)
+  - [ndm](#ndm)
+
 ## Estructura del proyecto
 
- ![Project Structure](/img/project-structure.png)
+
+
+ ![Project Structure](img/project-structure.png)
 
 
 
@@ -34,11 +56,11 @@
 
 ### `tsconfig.json`
 
-- Este archivo es necesario para configurar el proyecto para permitir la utilización de [TypeScript]( #typescript ). En este archivo se especifican las opciones de transpilación a las que [TypeScript](#TypeScript) accederá cuando se ejecute el comando de transpilación. En nuestro caso, ese comando es [ndm](###ndm), especificado en el archivo [package.json](#package.json).
+- Este archivo es necesario para configurar el proyecto para permitir la utilización de [TypeScript]( #typescript ). En este archivo se especifican las opciones de transpilación a las que [TypeScript](#TypeScript) accederá cuando se ejecute el comando de transpilación. En nuestro caso, ese comando es [ndm](#ndm), especificado en el archivo [package.json](#package.json).
 
-### `index.ts` | *Archivo de entrada del servidor*
+### `index.ts`
 
-- En este archivo se importan las carpetas [entities](###entities) y [resolvers](###resolvers) así como también el archivo [schemas-index.ts](#schemas-index.ts) el cual es necesario para unir todos los [schemas](###schemas) (archivos `.gql`) en un sólo archivo.
+- En este archivo se importan las carpetas [entities](#entities) y [resolvers](#resolvers) así como también el archivo [schemas-index.ts](#schemas-index.ts) el cual es necesario para unir todos los [schemas](#schemas) (archivos `.gql`) en un sólo archivo.
 
 ### `schemas-index.ts`
 
@@ -48,7 +70,7 @@
 
 
 
-## Dependencias (librerías)
+## Dependencias
 
 ### `TypeScript`
 
