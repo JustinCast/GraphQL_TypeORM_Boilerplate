@@ -10,7 +10,7 @@
 
 ### ``src``
 
-- Carpeta donde se encuentran las `entities` y `schemas` así como también  el archivo de entrada del servidor [index.ts](###index.ts)
+- Carpeta donde se encuentran las `entities` y `schemas` así como también  el archivo de entrada del servidor [index.ts]( #index.ts )
 
 ### `entities`
 
@@ -34,15 +34,15 @@
 
 ### `tsconfig.json`
 
-- Este archivo es necesario para configurar el proyecto para permitir la utilización de [TypeScript](###TypeScript). En este archivo se especifican las opciones de transpilación a las que [TypeScript](###TypeScript) accederá cuando se ejecute el comando de transpilación. En nuestro caso, ese comando es [ndm](###ndm), especificado en el archivo [package.json](###package.json).
+- Este archivo es necesario para configurar el proyecto para permitir la utilización de [TypeScript]( #typescript ). En este archivo se especifican las opciones de transpilación a las que [TypeScript](#TypeScript) accederá cuando se ejecute el comando de transpilación. En nuestro caso, ese comando es [ndm](###ndm), especificado en el archivo [package.json](#package.json).
 
 ### `index.ts` | *Archivo de entrada del servidor*
 
-- En este archivo se importan las carpetas [entities](###entities) y [resolvers](###resolvers) así como también el archivo [schemas-index.ts](###schemas-index.ts) el cual es necesario para unir todos los [schemas](###schemas) (archivos `.gql`) en un sólo archivo.
+- En este archivo se importan las carpetas [entities](###entities) y [resolvers](###resolvers) así como también el archivo [schemas-index.ts](#schemas-index.ts) el cual es necesario para unir todos los [schemas](###schemas) (archivos `.gql`) en un sólo archivo.
 
 ### `schemas-index.ts`
 
-- En este archivo `.ts` se importan todos los archivos `.gql` presentes dentro de la carpeta [schemas](###schemas), con el fin de unir estos en un sólo archivo que será consumido por el servidor.
+- En este archivo `.ts` se importan todos los archivos `.gql` presentes dentro de la carpeta [schemas](#schemas), con el fin de unir estos en un sólo archivo que será consumido por el servidor.
 
 ### `package.json`
 
