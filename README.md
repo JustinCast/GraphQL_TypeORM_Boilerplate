@@ -78,10 +78,24 @@
 
 ### `TypeORM`
 
-- ORM utilizado en el proyecto. Si desea conocer más, puede acceder a [typeorm.io](https://typeorm.io/#/  )
+- ORM utilizado en el proyecto. Si desea conocer más, puede acceder a [typeorm.io](https://typeorm.io/#/ )
 
+### `graphql-yoga`
 
+- Dependencia necesaria para crear un servidor que nos permita utilizar **GraphQL** y **TypeORM**.
+
+### `pg`
+
+- Driver de conexión necesario para conectarse con una base de datos PostgreSQL.
+###  `reflect-metadata`
+
+- Librería necesaria para que **TypeORM** utilice decoradores.
+### `nodemon`
+
+- Librería necesaria para escuchar los cambios en el archivo [index.ts](#index.ts) y levantar el servidor.
 
 ## Scripts
 
 ### `ndm`
+
+- Script que le indica a **nodemon** levantar el servidor.
