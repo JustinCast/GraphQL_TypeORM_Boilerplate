@@ -4,7 +4,7 @@
 
 # Tabla de contenidos
 
-- [Estructura del proyecto](#Estructura del proyecto)
+- [Estructura del proyecto](#Estructura-del-proyecto)
   - [src](#src)
   - [entities](#entities)
   - [resolvers](#resolvers)
@@ -68,15 +68,17 @@
 
 ### `package.json`
 
-
+- Archivo donde se encuentra la especificación de versiones de dependencias, especificación de [Scripts](#scripts), información del desarrollador y demás.
 
 ## Dependencias
 
 ### `TypeScript`
 
-
+- Superset de JavaScript  que nos permitirá una sintaxis mucho más OO, genérica. Además, para el uso de decoradores, es pertinente utilizar TypeScript. Si desea conocer más, puede acceder a [typescriptlang.org]( https://www.typescriptlang.org/ )
 
 ### `TypeORM`
+
+- ORM utilizado en el proyecto. Si desea conocer más, puede acceder a [typeorm.io](https://typeorm.io/#/  )
 
 
 
