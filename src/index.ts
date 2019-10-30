@@ -7,6 +7,7 @@ import { Tour } from "./entities/Tour";
 import { ScheduleResolver } from "./resolvers/Schedule.resolver";
 import { TagResolver } from "./resolvers/Tag.resolver";
 import { TourResolver } from "./resolvers/Tour.resolver";
+import schemasIndex from "./schemas-index";
 
 require('dotenv').config();
 
@@ -23,7 +24,9 @@ createConnection({
 })
   .then(() => {
     const server = new GraphQLServer({
-      typeDefs: [],
+      typeDefs: [
+        schemasIndex
+      ],
       resolvers: [ScheduleResolver, TagResolver, TourResolver],
     });
 

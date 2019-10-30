@@ -3,3 +3,7 @@ type Schedule {
   from_datetime: String!,
   to_datetime: String!
 }
+
+type Query {
+  schedules: [Schedule]!
+}

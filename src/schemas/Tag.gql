@@ -2,3 +2,7 @@ type Tag {
   id: Int!,
   name: String!
 }
+
+type Query {
+  tags: [Tag]!
+}

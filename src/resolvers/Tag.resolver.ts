@@ -3,8 +3,10 @@ import { Tag } from "../entities/Tag";
 
 export const TagResolver = {
   Query: {
-    async tags(parent: any, args: any, context: any) {}
-
-    // TODO: obtener un tag específico
+    async tags(parent: any, args: any, context: any) {
+      return await getRepository(Tag).find({
+        relations: ["tour"]
+      });
+    }
   }
 }

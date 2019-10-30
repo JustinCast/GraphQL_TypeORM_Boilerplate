@@ -10,6 +10,24 @@ export class Tour {
   @Column()
   name!: string;
 
+  @Column()
+  description!: string;
+
+  @Column()
+  max_people!: number;
+
+  @Column()
+  cost!: number;
+  
+  @Column()
+  all_included!: boolean;
+
+  @Column()
+  min_age!: number;
+
+  @Column()
+  ranking!: number;
+
   @OneToMany(() => Schedule, (schedule: Schedule) => schedule.tour)
   schedules!: Array<Schedule>;
 

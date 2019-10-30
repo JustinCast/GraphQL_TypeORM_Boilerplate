@@ -3,12 +3,17 @@
 type Tour {
   id: Int!,
   name: String!,
-  schedule: [Schedule]!,
+  schedules: [Schedule]!,
   description: String!,
   max_people: Int!,
   cost: Float!,
   all_included: Boolean!,
-  ming_age: Int!,
+  min_age: Int!,
   ranking: Int!,
   tags: [Tag]!
+}
+
+type Query {
+  tours: [Tour]!
+  tour(id: Int!): Tour!
 }
