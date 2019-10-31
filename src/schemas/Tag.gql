@@ -6,3 +6,11 @@ type Tag {
 type Query {
   tags: [Tag]!
 }
+
+input InputMutation {
+  id_tour: Int!
+  name: String!
+}
+type Mutation {
+  saveTag(input: InputMutation): Tag
+}
