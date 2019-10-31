@@ -8,8 +8,8 @@
  */
 
 import * as path from 'path';
-import { fileLoader, mergeTypes } from 'merge-graphql-schemas';
+import { fileLoader, mergeTypes } from 'merge-graphql-schemas'; // objetos necesarios de la librería
  
-const schemasArray = fileLoader(path.join(__dirname, './schemas'));
+const schemasArray = fileLoader(path.join(__dirname, './schemas')); // se carga la carpeta con todos los schemas
  
 export default mergeTypes(schemasArray, { all: true });
